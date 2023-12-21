@@ -1,6 +1,7 @@
 # Cpp-RxThread
 一个c++版的线程管理器，开启线程处理的过程中，可以订阅该工作线程push的信息，并在另外一个订阅线程中处理，不耽误工作线程的执行。
 使用方法：
+
 1.先定义工作线程的需要交互的数据信息类型，并继承WorkOperator重写onWork方法，如：
 
     class InputWork : public WorkOperator<int> {
